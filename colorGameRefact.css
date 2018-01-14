@@ -1,0 +1,81 @@
+/*Elementos da Página*/
+body {
+	background-color: #232323;
+	font-family: "Montserrat";
+	margin: 0 0; /*eliminar os pequenos gaps nas laterais*/
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	line-height: 1.1;
+	background-color: steelblue;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 0;
+	margin: 0 0;
+	transition: all 0.6s;
+	--webkit-transition: all 0.6s;
+	--moz-transition: all 0.6s;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit; /*herda a fonte que já está sendo utilizada*/
+	height: 100%; /*garante que o botão pegue 100% da altura daquele container*/
+	transition: all 0.3s; /*realiza a transição para uma animação (no caso hover)*/
+	--webkit-transition: all 0.3s;
+	--moz-transition: all 0.3s;
+	outline: none; /*tira o highlight que o proprio browser dá quando algo é selecionado*/
+}
+
+button:hover {
+	color: white;
+	background-color: steelblue;
+}
+
+/*Definindo os quadrados*/
+.square {
+	width: 30%;
+	margin: 1.66%;
+	padding-bottom: 30%;
+	float: left;
+	background: purple;
+	border-radius: 15%;
+	transition: background-color 0.6s;
+	--webkit-transition: background-color 0.6s;
+	--moz-transition: background-color 0.6s;
+}
+
+.selected {
+	color: white;
+	background-color: steelblue;
+}
+
+#container {
+	max-width: 600px;
+	margin: 20px auto;
+
+}
+
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 15%; /*Display e widht combinados permite adicionar um espaço para o span*/
+}
+
