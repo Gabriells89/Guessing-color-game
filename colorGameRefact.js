@@ -36,7 +36,7 @@ function setModeBtn() {
 			modeButtons[1].classList.remove("selected")
 			this.classList.add("selected");
 			//Mudando o número de quadrados de acordo com a dificuldade:
-			this.textContent === "Fácil" ? numSquares = 3:numSquares = 6; // O símbolo ? é para operações ternárias.
+			this.textContent === "Fácil" ? numSquares = 3:numSquares = 6;
 			reset();
 		});
 	}	
@@ -134,10 +134,3 @@ resetBtn.addEventListener("click", function() {
 });
 
 init();
-
-//Lista de refatoração:
-// Criado código de inicialização (init()), contendo as principais funções que organizam o código quando a página é carregada.
-// Botões de dificuldade são condensados em apenas um código
-// Criado variação para número de quadrados para fazer a transição entre os botões de dificuldade.
-// If statemente é substituído por um código ternário, que condensa tudo em uma única linha.
-// Código reset foi melhorado pra incluir quase todas as regras junto com o código que seta as cores dos quadrados.
